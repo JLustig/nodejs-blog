@@ -1,0 +1,13 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    .container
+      include ./includes/header.jade
+      .row
+        .center-block
+          ul
+            each post in posts
+              .post
+                i.fa.fa-gg
+                a(href='/singlepost?_id=#{post._id}')   #{post.title}

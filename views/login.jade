@@ -1,0 +1,10 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    .container
+      div.loginbox
+      form(name="login", action="/login", method="post")
+        input(type="text", name="name")
+        input(type="password", name="password")
+        input(type="submit", value="login")

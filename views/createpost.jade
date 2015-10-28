@@ -1,0 +1,17 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    .container
+      include ./includes/header.jade
+      div.postbox
+      form(name="createpost", action="/createpost", method="post")
+        h Title
+        br
+        input(type="text", name="title")
+        br
+        h Text
+        br
+        textarea(rows=10, cols=50, name="text")
+        br
+        input(type="submit", value="create")

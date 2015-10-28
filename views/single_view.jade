@@ -1,0 +1,14 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    .container
+      include ./includes/header.jade
+      .row
+        .center-block
+          ul
+            each post in posts
+              .post
+                h4 #{post.title}
+                p #{post.text}
+                span.date #{post.created_at}
