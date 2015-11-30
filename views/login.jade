@@ -1,10 +1,24 @@
 doctype html
 html
-  include ./includes/head.jade
-  body
-    .container
-      div.loginbox
-      form(name="login", action="/login", method="post")
-        input(type="text", name="name")
-        input(type="password", name="password")
-        input(type="submit", value="login")
+	include ./includes/head.jade
+	body
+		.container
+			br
+			br
+			br
+			.loginbox.mainbox.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
+				.panel.panel-info
+					.panel-heading
+						.panel-title
+							.p Login
+				.panel-body
+					form.form-horizontal(name="login", action="/login", method="post", role="form")
+						.input-group
+							span.input-group-addon
+								i.glyphicon.glyphicon-user
+							input.form-control(type="text", name="name")
+						.input-group
+							span.input-group-addon
+								i.glyphicon.glyphicon-lock
+							input.form-control(type="password", name="password")
+						input.btn.btn-success(type="submit", value="Login")

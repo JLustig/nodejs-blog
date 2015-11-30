@@ -1,4 +1,12 @@
-.date{
+.small{
 	font-size: 10px;
 	font-style: italic;
+}
+
+.loginbutton{
+	float:right;
+}
+
+.input-group{
+	margin-bottom: 25px;
 }
