@@ -1,2 +1,2 @@
 # nodejs-blog
-basic blog in nodejs
+Simple blog to learn nodejs
